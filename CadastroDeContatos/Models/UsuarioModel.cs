@@ -20,6 +20,8 @@ namespace CadastroDeContatos.Models
         [EmailAddress(ErrorMessage = "O e-mail informado não é válido!")]
         public string EMail { get; set; }
 
+        public byte[] Foto { get; set; }
+
         [Required(ErrorMessage = "Escolha um perfil!")]
         public PerfilEnum Perfil { get; set; }
 

@@ -4,14 +4,16 @@ using CadastroDeContatos.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CadastroDeContatos.Migrations
 {
     [DbContext(typeof(ContatoContext))]
-    partial class ContatoContextModelSnapshot : ModelSnapshot
+    [Migration("20240116230643_Inserção do campo Foto na tabela Usuarios")]
+    partial class InserçãodocampoFotonatabelaUsuarios
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
